@@ -2,7 +2,7 @@ import React ,{useState} from 'react';
 import { View, ScrollView, StyleSheet,Text,TouchableOpacity } from 'react-native';
 import {Feather} from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler';
-import api from '../services/api.'
+import api from '../services/api'
 import { useFocusEffect,useNavigation } from '@react-navigation/native';
 // import { Container } from './styles';
 interface Project{
@@ -29,7 +29,7 @@ const ListProjects: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
 
-      <Text style={styles.IntenProjectsTitle}> Lista de Projetos</Text>
+      <Text style={styles.IntenProjectsTitle}>projetinhos para 21</Text>
       {
         projects.map(project=>
           <View key={project.id} style={styles.ItemProjectContainer}> 
@@ -60,62 +60,72 @@ const ListProjects: React.FC = () => {
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1,
-    backgroundColor:'#fff'
+  width: 420,
+	marginTop: 0,
+  marginRight: 'auto',
+  marginBottom: 0,
+  marginLeft: 'auto',
+  backgroundColor:'pink',
+  display: 'flex',
+
   },
   IntenProjectsTitle:{
-    color:'#393c9e',
-    fontSize:24,
-    fontWeight:'bold',
-    borderWidth: 1,
-    borderColor: '#B3DAE2',
+    color:'blue',
     marginTop:30,
+    fontSize:20,
+    height:100,
+    fontWeight:'bold',
+    
     textAlign:'center'
   },
   ItemProjectContainer:{
-     height:30,
-     width:30,
+     alignSelf:'center',
+     width:430,
+     marginTop:5,
+     borderBottomColor:'black',
+     borderBottomWidth:1,
      padding: 20,
-     marginTop:30,
      flexDirection: 'row',
-     justifyContent: 'space-between',
-     alignItems:'center',
+     justifyContent: 'space-around',
+     alignItems:'flex-end',
 
   },
   ItemProjectTitle:{
     color:'#8889a5',
-    fontSize:30,
-    fontWeight:'400',
-    width:100,
-    marginLeft:30
+    fontSize:10,
+    fontWeight:'100',
+    width:200,
+
 
   },
   createProjectButton:{
-    backgroundColor:"#8889a5",
+    backgroundColor:"orange",
     borderRadius:28,
-    height:60,
-    paddingLeft:24,
-    marginTop:80,
+    height:30,
+    width:100,
+    justifyContent:'center',
+    alignItems:'center',
     marginHorizontal:20,
     flexDirection:'row',
-    justifyContent:'space-between',
-    alignItems:'center',
     elevation:3
 
   },
   goProjectsDetalhesButton:{
     width:100,
     height:30,
-    backgroundColor: "#15d686",
+    backgroundColor: "orange",
     borderRadius:24,
-    marginRight:60,
+    justifyContent: 'center',
+    alignItems:'center',
   },
   createProjectText:{
-    color:'#fff',
-    fontSize:28,
+    color:'black',
+    fontSize:9,
     fontWeight:'bold',
     marginLeft:10
-  }
+  },
+  
+  
 });
 
 export default ListProjects;

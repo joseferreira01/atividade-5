@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   marginBottom: 0,
   marginLeft: 'auto',
   backgroundColor:'pink',
-  display: 'flex',
+  display: 'flex'
 
   },
   IntenProjectsTitle:{

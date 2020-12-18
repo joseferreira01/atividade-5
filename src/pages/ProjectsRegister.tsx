@@ -19,7 +19,7 @@ const ProjectsRegister: React.FC = () => {
       url
      
     }
-    await api.post('projeto',project);
+    await api.post('projetos',project);
     navigation.navigate('ListProjects');
   }
 

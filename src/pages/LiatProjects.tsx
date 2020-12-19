@@ -4,7 +4,6 @@ import {Feather} from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler';
 import api from '../services/api'
 import { useFocusEffect,useNavigation } from '@react-navigation/native';
-// import { Container } from './styles';
 interface Project{
   id: number;
   title: string;

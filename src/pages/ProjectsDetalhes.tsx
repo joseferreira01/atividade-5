@@ -42,7 +42,37 @@ const ProjectsDetales: React.FC = () => {
     
   };
   const styles = StyleSheet.create({
+    container:{
+      width: 420,
+  marginTop: 0,
+  height:1000,
+  marginRight: 'auto',
+  marginBottom: 0,
+  marginLeft: 'auto',
+  backgroundColor:'pink',
+  display: 'flex'
+    },
+    detailContainer:{
+      color:'blue',
+      backgroundColor:'red',
+    marginTop:30,
+    fontSize:20,
+    fontWeight:'bold',
+    
+    textAlign:'center'
+    },
+    titleProject:{
+    color:'blue',
+    marginTop:30,
+    fontSize:20,
+    height:100,
+    fontWeight:'bold',
+    
+    textAlign:'center'
+    },
+    CarregandoText:{
 
+    }
   });
 
   export default ProjectsDetales;
